@@ -1,0 +1,12 @@
+<html>
+	<body>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		var socket = io();
+		socket.on('novaPromocao', function(data){
+			alert('Livro em promocao ' + data.livro.id);
+		});
+	</script>
+	</body>
+</html>
